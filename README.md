@@ -1,4 +1,4 @@
-# SWCB-Text-Mining
+# SWCB-Tourist-attraction
 
 水保局文字探勘專案為3人團隊，主要開發語言為Python、Java。
 
