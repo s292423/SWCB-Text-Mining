@@ -1,0 +1,213 @@
+<template>
+<div id='checkBox'>
+   <div v-for="(item, index) in names" :key="index">
+    <label class="toggle">
+      <input class="toggle__input" type="checkbox" :value="item.name" :id="item.name" v-model="item.checked" @click="check($event)">
+      <span class="toggle__label">
+        <span class="toggle__text">{{item.name}}</span>
+      </span>
+    </label>
+   </div>
+</div>
+</template>
+<script>
+
+import Event from '../bus.js'
+export default {
+  name: 'checkBox',
+  data() {
+      return {
+          names: [],
+          temp: null,
+      }
+  },
+  methods: {
+    check: function(e) {
+      if (e.target.checked) {
+        Event.$emit('PostCheckValue', e.target.value);
+      }else {
+        Event.$emit('DelCheckValue', e.target.value);
+      }
+    }
+  },
+  created() {
+      Event.$on('post', (data)=>{
+        //   console.log(data);
+          this.temp = [];
+          for(var i = 0;i<data.length;i++){
+              if (!this.temp.includes(data[i]['properties']['C_x'])){
+                this.temp.push(data[i]['properties']['C_x']);
+              }
+          }
+          this.names = [];
+          for(var i = 0; i<this.temp.length;i++){
+              this.names.push({
+                  name: this.temp[i],
+                  checked: false
+              })
+          }
+      })
+  }
+}
+</script>
+<style>
+.toggle{
+  --uiToggleSize: var(--toggleSize, 20px);
+  --uiToggleIndent: var(--toggleIndent, .4em);
+  --uiToggleBorderWidth: var(--toggleBorderWidth, 2px);
+  --uiToggleColor: var(--toggleColor, #000);
+  --uiToggleDisabledColor: var(--toggleDisabledColor, #868e96);
+  --uiToggleBgColor: var(--toggleBgColor, black);
+  --uiToggleArrowWidth: var(--toggleArrowWidth, 2px);
+  --uiToggleArrowColor: var(--toggleArrowColor, white);
+
+  display: inline-block;
+  position: relative;
+}
+
+.toggle__input{
+  position: absolute;
+  left: -99999px;
+}
+
+.toggle__label{
+  display: inline-flex;
+  cursor: pointer;
+  min-height: var(--uiToggleSize);
+  padding-left: calc(var(--uiToggleSize) + var(--uiToggleIndent));
+}
+
+.toggle__label:before, .toggle__label:after{
+  content: "";
+  box-sizing: border-box;  
+  width: 1em;
+  height: 1em;
+  font-size: var(--uiToggleSize);
+
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.toggle__label:before{
+  border: var(--uiToggleBorderWidth) solid var(--uiToggleColor);
+  z-index: 2;
+}
+
+.toggle__input:disabled ~ .toggle__label:before{
+  border-color: var(--uiToggleDisabledColor);
+}
+
+.toggle__input:focus ~ .toggle__label:before{
+  box-shadow: 0 0 0 2px var(--uiToggleBgColor), 0 0 0px 4px var(--uiToggleColor);
+}
+
+.toggle__input:not(:disabled):checked:focus ~ .toggle__label:after{
+  box-shadow: 0 0 0 2px var(--uiToggleBgColor), 0 0 0px 4px var(--uiToggleColor);
+}
+
+.toggle__input:not(:disabled) ~ .toggle__label:after{
+  background-color: var(--uiToggleColor);
+  opacity: 0;
+}
+
+.toggle__input:not(:disabled):checked ~ .toggle__label:after{
+  opacity: 1;
+}
+
+.toggle__text{
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+/*
+The arrow size and position depends from sizes of square because I needed an arrow correct positioning from the top left corner of the element toggle
+*/
+
+.toggle__text:before{
+  content: "";
+  box-sizing: border-box;
+  width: 0;
+  height: 0;
+  font-size: var(--uiToggleSize);
+
+  border-left-width: 0;
+  border-bottom-width: 0;
+  border-left-style: solid;
+  border-bottom-style: solid;
+  border-color: var(--uiToggleArrowColor);
+
+  position: absolute;
+  top: .5428em;
+  left: .2em;
+  z-index: 3;
+
+  transform-origin: left top;
+  transform: rotate(-40deg) skew(10deg);
+}
+
+.toggle__input:not(:disabled):checked ~ .toggle__label .toggle__text:before{
+  width: .5em;
+  height: .25em;
+  border-left-width: var(--uiToggleArrowWidth);
+  border-bottom-width: var(--uiToggleArrowWidth);
+  will-change: width, height;
+  transition: width .1s ease-out .2s, height .2s ease-out;
+}
+
+.toggle__label:before, .toggle__label:after{
+  border-radius: 2px;
+}
+
+.toggle__input:not(:disabled) ~ .toggle__label:before,
+.toggle__input:not(:disabled) ~ .toggle__label:after{
+  opacity: 1;
+  transform-origin: center center;
+  will-change: transform;
+  transition: transform .2s ease-out;
+}
+
+.toggle__input:not(:disabled) ~ .toggle__label:before{
+  transform: rotateY(0deg);
+  transition-delay: .2s;
+}
+
+.toggle__input:not(:disabled) ~ .toggle__label:after{
+  transform: rotateY(90deg);
+}
+
+.toggle__input:not(:disabled):checked ~ .toggle__label:before{
+  transform: rotateY(-90deg);
+  transition-delay: 0s;
+}
+
+.toggle__input:not(:disabled):checked ~ .toggle__label:after{
+  transform: rotateY(0deg);
+  transition-delay: .2s;
+}
+
+.toggle__text:before{
+  opacity: 0;
+}
+
+.toggle__input:not(:disabled):checked ~ .toggle__label .toggle__text:before{
+  opacity: 1;
+  transition: opacity .1s ease-out .3s, width .1s ease-out .5s, height .2s ease-out .3s;
+}
+
+/*
+=====
+LEVEL 3. SETTINGS
+=====
+*/
+
+.toggle{
+  --toggleColor: #2FA745;
+  --toggleBgColor: #CAE2C2;
+  --toggleSize: 20px;
+}
+
+#checkBox {
+  margin: 4px;
+}
+</style>

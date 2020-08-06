@@ -1,0 +1,133 @@
+{
+  "type": "FeatureCollection",
+  "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+  "features": 
+  [
+    {
+      "type": "Feature",
+      "properties": {
+        "C_x": 5,
+        "spot": "松鶴園大飯店"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.9119,
+          23.86616
+        ] 
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "C_x": 25,
+        "spot": "阿拉丁廣場"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.9464,
+          23.86804
+        ] 
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "C_x": 9,
+        "spot": "阿婆茶葉蛋"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.9131,
+          23.85249
+        ] 
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "C_x": 9,
+        "spot": "青龍山步道"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.913966,
+          23.850292
+        ] 
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "C_x": 5,
+        "spot": "耶穌堂"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.910186,
+          23.863552
+        ] 
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "C_x": 25,
+        "spot": "娜魯灣劇場"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.9501,
+          23.86224
+        ] 
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "C_x": 15,
+        "spot": "雲品溫泉酒店"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.9235,
+          23.87092
+        ] 
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "C_x": 16,
+        "spot": "德化社"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.930253,
+          23.848579
+        ] 
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "C_x": -2,
+        "spot": "頭社自行車步道"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.896614,
+          23.833705
+        ] 
+      }
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "name": "test",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build"
+  },
+  "dependencies": {
+    "core-js": "^2.6.5",
+    "geojson-polyline": "^1.0.3",
+    "ol": "^5.3.3",
+    "ol-ext": "^3.1.5",
+    "vue": "^2.6.10",
+    "vue-resource": "^1.5.1",
+    "vuelayers": "^0.11.4"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.10.0",
+    "@vue/cli-service": "^3.10.0",
+    "json-loader": "^0.5.7",
+    "vue-template-compiler": "^2.6.10",
+    "webpack": "^4.39.2",
+    "webpack-cli": "^3.3.7"
+  }
+}

@@ -1,0 +1,357 @@
+{
+  "type": "FeatureCollection",
+  "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+  "features": 
+  [
+    {
+      "type": "Feature",
+      "properties": {
+        "C_x": 25,
+        "spot": "九族文化村"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.947861, 
+          23.869108
+        ] 
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "C_x": -2,
+        "spot": "大林休閒農業區"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.943622, 
+          23.875953
+        ] 
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "C_x": 15,
+        "spot": "孔雀園"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.931688, 
+          23.868313
+        ] 
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "C_x": -2,
+        "spot": "日月潭"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.915913, 
+          23.857334
+        ] 
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "C_x": 15,
+        "spot": "日月潭文武廟"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.927429, 
+          23.869839
+        ] 
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "C_x": 5,
+        "spot": "日月潭水社遊客中心"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.9111, 
+          23.86646
+        ] 
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "C_x": 16,
+        "spot": "日月潭民宿漁村別館"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.9299, 
+          23.84813
+        ] 
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "C_x": 16,
+        "spot": "日月潭伊達卲"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.932667, 
+          23.849411
+        ] 
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "C_x": 1,
+        "spot": "日月潭國家風景區"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.903039, 
+          23.852166
+        ] 
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "C_x": -2,
+        "spot": "日月潭慈恩塔"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.920393, 
+          23.842364
+        ] 
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "C_x": -2,
+        "spot": "日月潭頭社休閒農業區"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.903589, 
+          23.831725
+        ] 
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "C_x": 16,
+        "spot": "日月潭纜車"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.934739, 
+          23.852249
+        ] 
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "C_x": -2,
+        "spot": "水社大山步道"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.946889, 
+          23.851107
+        ] 
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "C_x": 5,
+        "spot": "水社碼頭"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.911826, 
+          23.864504
+        ] 
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "C_x": -2,
+        "spot": "水社親水步道"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.916466, 
+          23.868554
+        ] 
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "C_x": 16,
+        "spot": "正心書院 明德宮"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.930301, 
+          23.847633
+        ] 
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "C_x": 9,
+        "spot": "玄光寺"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.913604, 
+          23.852098
+        ] 
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "C_x": -2,
+        "spot": "玄奘寺"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.91713, 
+          23.847372
+        ] 
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "C_x": 16,
+        "spot": "甘為霖紀念禮拜堂"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.930471,
+          23.847909
+        ] 
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "C_x": 16,
+        "spot": "伊達邵渡假旅店"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.9326,
+          23.84771
+        ] 
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "C_x": 16,
+        "spot": "伊達邵碼頭"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.929674,
+          23.849742
+        ] 
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "C_x": 1,
+        "spot": "向山自行車步道"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.901731,
+          23.852933
+        ] 
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "C_x": 1,
+        "spot": "向山遊客中心"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.902116,
+          23.851145
+        ] 
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "C_x": 15,
+        "spot": "年梯步道"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.927,
+          23.86944
+        ] 
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "C_x": 9,
+        "spot": "拉魯島"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.911111,
+          23.855556
+        ] 
+      }
+    }
+  ]
+}
